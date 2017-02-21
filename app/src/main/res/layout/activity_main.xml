@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.nscpl_aqib.bluetoothexam1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BlueTooth Example"
+       android:layout_marginLeft="70dp"
+        android:textColor="#f00"
+        android:textSize="25sp"/>
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="130dp"
+        android:background="@drawable/ic_bluetooth_searching_black_24dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:onClick="on"
+        android:layout_marginLeft="6dp"
+
+    android:textSize="25sp"
+        android:text="Turn On"
+        android:textColor="#fff"
+        android:id="@+id/bt1"
+    android:background="#1a2b3c"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GetVisible"
+        android:textSize="25sp"
+        android:id="@+id/bt2"
+        android:textColor="#fff"
+        android:onClick="visible"
+        android:layout_marginLeft="20dp"
+        android:background="#1a2b3c"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ListD"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:id="@+id/bt3"
+        android:onClick="list"
+        android:layout_marginLeft="20dp"
+        android:background="#1a2b3c"/></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turnoff"
+            android:id="@+id/bt4"
+            android:onClick="off"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:layout_marginLeft="147dp"
+            android:layout_marginTop="5dp"
+            android:background="#1a2b3c"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="The Devices are:"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv1"
+            android:textSize="25sp"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lv"></ListView>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
